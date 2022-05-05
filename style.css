@@ -1,6 +1,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 body{
@@ -100,13 +101,14 @@ body{
     width: 90%;
     height: 50%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 .main__heroText__hero{
-    width: 60%;
+    width: 70%;
     height: 100%;
+    margin: 0 0 0 -4vw;
 }
 
 .main__heroText__hero img{
@@ -115,7 +117,6 @@ body{
 
 .main__heroText__text{
     height: 100%;
-    width: 35%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -159,9 +160,9 @@ body{
 }
 
 .main__frames{
-    margin-top: 40px;
+    margin-top: 0;
     height: 30%;
-    width: 80%;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -200,24 +201,27 @@ footer{
 }
 
 @media (max-width: 1400px) {
+    .main__frames{
+        width: 74%;
+    }
     .main__frames__sciany, .main__frames__zaplecze, .main__frames__luki, .main__frames__lady, .main__frames__podwieszenie{
         font-size: 18px;
     }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
     .main__heroText__text{
     }
 
     .main__heroText__text h1{
-        font-size: 40px;
-        line-height: 40px;
+        font-size: 38px;
+        line-height: 38px;
 
     }
 
     .main__heroText__text p{
-        font-size: 14px;
-        margin-top: 16px;
+        font-size: 13px;
+        margin-top: 15px;
         font-weight: 500;
     }
 
@@ -275,6 +279,18 @@ footer{
         transition: none;
     }
 
+    .header__contactAndSocial__email a:hover{
+        font-size: 12px;
+    }
+
+    .header__contactAndSocial__phone a:hover{
+        font-size: 12px;
+    }
+
+    .header__contactAndSocial__facebook a img:hover{
+        transform: none;
+    }
+
     .main__heroText{
         margin-top: 60px;
         flex-direction: column;
@@ -283,6 +299,7 @@ footer{
     }
     .main__heroText__hero{
         width: 90%;
+        margin: 0 0 0 -3vw;
     }
     .main__heroText__text{
         width: 90%;
@@ -291,15 +308,11 @@ footer{
     }
 
     .main__heroText__text h1{
-        font-size: 40px;
-        line-height: 40px;
         text-align: center;
 
     }
 
     .main__heroText__text p{
-        font-size: 14px;
-        margin-top: 16px;
         text-align: center;
 
     }
@@ -312,9 +325,14 @@ footer{
         transition: none;
     }
 
+    .main__heroText__text a:hover{
+        transform: none;
+    }
+
     .main__frames{
+        margin-top: 30px;
+        width: 78%;
         flex-wrap: wrap;
-        margin-bottom: 50px;
         justify-content: center;
     }
 
